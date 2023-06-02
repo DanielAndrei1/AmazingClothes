@@ -1,0 +1,678 @@
+
+.Header{
+    height:70px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.navbar{
+    background-color: #F8F8F8;
+    float: left;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+ul {
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+     
+
+.navMenu ul li{
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    padding-left: 10px;
+    
+    
+}
+.navBrand{
+    color: #F29100;
+
+}
+.navMenu ul li:hover{
+    cursor: pointer;
+}
+.highLight {
+    color: black;
+    text-decoration: none;
+}
+.highLight:before{
+    content: '';
+    background: linear-gradient(30deg, #FFC300, #c03a9a, #fffb00, #25D366, #00ffd5, #16a4c7, #7a00ff, #FF5729, #f7c625);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 200%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.highLight:hover:before {
+    opacity: 1;
+}
+.glow-on-hover {
+    border: none;
+    outline: none;
+    color: black;
+    background: #25D366;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(30deg, #FFC300, #c03a9a, #fffb00, #25D366, #00ffd5, #16a4c7, #7a00ff, #FF5729, #f7c625);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 200%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+.NavName{
+    float: left;
+    padding-left: 5px;
+    margin-left: 0.8em;
+    color: black;
+    display: flex;
+    width:-webkit-fill-available;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container.navMenu ul{
+    padding-left: 0 !important;
+    margin-bottom: 0px;
+}
+.container.navMenu {
+    float: left;
+    justify-content: center !important;
+    width:-webkit-fill-available;
+    text-align: center;
+
+}
+.container.navMenu ul{
+    width:-webkit-fill-available;
+   }
+
+.container.navMenu ul li{
+ font-size: 18px;
+}
+.navMenuWhatsup {
+    margin-left: 10px;
+
+}
+.navMenuWhatsup svg{
+    padding-right: 8px;
+    height: 15px;
+    margin-top: -4px;
+
+}
+a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+    display:none;
+    }
+    
+a[href="tel:+40 725647363"] {
+    display:block;
+    text-align: center;
+    text-decoration: none !important;
+    
+    }
+
+    a{
+        color: black !important;
+        text-decoration: none !important;
+
+    }
+
+
+@media only screen and (min-width:199px) and (max-device-width: 319px)  {
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 1em;
+        color: black;
+        font-size: 115%;
+        margin-bottom: 3px;
+        padding-bottom: 0px;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+    }
+  
+    .container.navMenu ul{
+        padding-left: 0 !important;
+        margin-bottom: 0px;
+    }
+
+    .navMenu{
+        float: left;
+        margin-top: 0px !important;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+    }
+
+    .container.navMenu ul li a{
+        font-size: 123% !important;
+    }
+    .navMenuWhatsup {
+        font-size: 123% !important;
+
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 15px;
+
+    }
+    .navMenuWhatsup  a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        text-align: center;
+        text-decoration: none !important;
+        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
+
+        }
+
+
+}
+
+@media only screen and (min-width:320px) and (max-device-width: 424px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 0.8em;
+        color: black;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .container.navMenu ul{
+        padding-left: 0 !important;
+        margin-bottom: 0px;
+    }
+    .container.navMenu {
+        float: left;
+        justify-content: center !important;
+        width:-webkit-fill-available;
+        text-align: center;
+
+    }
+    .container.navMenu ul{
+        width:-webkit-fill-available;
+       }
+
+    .container.navMenu ul li{
+     font-size: 18px;
+    }
+    .navMenuWhatsup {
+        padding-bottom: 4px;
+        margin-left: 10px;
+
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 15px;
+        margin-top: -4px;
+
+    }
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        text-align: center;
+        text-decoration: none !important;
+        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
+
+        }
+
+
+}
+
+@media only screen and (min-width:425px) and (max-device-width: 599px)  {
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 0.8em;
+        color: black;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .container.navMenu ul{
+        padding-left: 0 !important;
+        margin-bottom: 0px;
+    }
+    .container.navMenu {
+        float: left;
+        justify-content: center !important;
+        width:-webkit-fill-available;
+        text-align: center;
+
+    }
+    .container.navMenu ul{
+        width:-webkit-fill-available;
+       }
+
+    .container.navMenu ul li{
+     font-size: 18px;
+    }
+    .navMenuWhatsup {
+        padding-bottom: 4px;
+        margin-left: 10px;
+
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 15px;
+        margin-top: -4px;
+
+    }
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        text-align: center;
+        text-decoration: none !important;
+        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
+
+        }
+
+
+
+}
+@media only screen and (min-width:600px) and (max-device-width: 800px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 0.8em;
+        color: black;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .container.navMenu ul{
+        padding-left: 0 !important;
+        margin-bottom: 0px;
+    }
+    .container.navMenu {
+        float: left;
+        justify-content: center !important;
+        width:-webkit-fill-available;
+        text-align: center;
+
+    }
+    .container.navMenu ul{
+        width:-webkit-fill-available;
+       }
+
+    .container.navMenu ul li{
+     font-size: 18px;
+    }
+    .navMenuWhatsup {
+        padding-bottom: 4px;
+        margin-left: 10px;
+
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 15px;
+        margin-top: -4px;
+
+    }
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        text-align: center;
+        text-decoration: none !important;
+        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
+    
+            
+    
+        }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width:801px) and (max-device-width: 1023px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 0.8em;
+        color: black;
+        justify-content: center !important;
+        display: flex;
+        width:-webkit-fill-available;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .container.navMenu ul{
+        padding-left: 0 !important;
+        margin-bottom: 0px;
+    }
+    .container.navMenu {
+        float: left;
+        justify-content: center !important;
+        width:-webkit-fill-available;
+        text-align: center;
+
+    }
+    .container.navMenu ul{
+        width:-webkit-fill-available;
+       }
+
+    .container.navMenu ul li{
+     font-size: 18px;
+    }
+    .navMenuWhatsup {
+        padding-bottom: 4px;
+        margin-left: 10px;
+
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 15px;
+        margin-top: -4px;
+
+    } a{
+        color: black !important;
+        text-decoration: none !important;
+
+    }
+
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        text-align: center;
+        text-decoration: none !important;
+        
+        }
+
+       
+
+
+}
+@media only screen and (min-width:1024px) and (max-device-width: 1439px){ /* big landscape tablets, laptops, and desktops */ 
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        }
+
+    .NavName{
+        float: left;
+        width: 300px;
+        padding-left: 5px;
+        margin-left: 1em;
+        color: black;
+        font-size: 24px;
+    }
+    .NavName span {
+        width: max-content;
+    }
+    .navbar{
+        flex-wrap: nowrap !important;
+    }
+
+    .navMenu{
+        float: right;
+        margin-top: 20px;
+    }
+
+    .container.navMenu{
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+    }
+    .navMenuWhatsup{
+        width:220px;
+        float:left;
+        margin-left: 15px;
+        padding-bottom: 13px;
+    
+    }
+    .navMenuWhatsup button{
+        width: max-content;
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 20px;
+    }
+    .navMenuWhatsup  a{
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+
+
+}
+
+@media only screen and (min-width:1440px) and (max-device-width: 2000px){ 
+    .NavName{
+        float: left;
+        width: 300px;
+        padding-left: 5px;
+        margin-left: 1em;
+        color: black;
+        font-size: 24px;
+    }
+
+   
+    .navbar{
+        flex-wrap: nowrap !important;
+    }
+
+    .navMenu{
+        float: right;
+        margin-top: 20px;
+    }
+
+    .container.navMenu{
+        flex-wrap: nowrap !important;
+        justify-content: flex-end !important;
+    }
+    .navMenuWhatsup{
+        width:220px;
+        float:left;
+        width: max-content;
+    }
+
+    .navMenuWhatsup button{
+        width: max-content;
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 20px;
+    }
+    .navMenuWhatsup  a{
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        }
+
+
+
+}
+
+
+    
+@media only screen and (min-width:2001px) and (max-device-width: 3000px){ 
+
+    .NavName{
+        float: left;
+        padding-left: 5px;
+        margin-left: 1em;
+        color: black;
+        width: -webkit-fill-available;
+        font-size: -webkit-xxx-large;
+        justify-content: none !important;
+        display: block !important;
+    }
+
+    
+   
+    .container.navMenu ul li{
+        font-size: 42px;
+
+    }
+
+    .navMenu{
+        flex-wrap: nowrap !important;
+        float: right;
+        margin-top: 20px;
+    }
+    .container{
+        max-width: 2421px !important;
+    }
+    .container.navMenu{
+        flex-wrap: nowrap !important;
+        justify-content: flex-end !important;
+    }
+    .container.navMenu ul li{
+        
+    display: table-cell
+}
+
+    .navMenuWhatsup{
+        width:220px;
+        float:left;
+        margin-left: 15px;
+        padding-bottom: 13px;
+        width: max-content;
+    }
+
+    .navMenuWhatsup button{
+        width: max-content;
+    }
+    .navMenuWhatsup svg{
+        padding-right: 8px;
+        height: 54px;
+        width: 44px;
+    }
+    .navMenuWhatsup  a{
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+
+    a[href="https://wa.me/+40 725647363?text=Buna ziua,"] {
+        display:none;
+        }
+        
+    a[href="tel:+40 725647363"] {
+        display:block;
+        }
+
+
+}
+
+

@@ -1,0 +1,74 @@
+.form{
+    float: left;
+    display: block;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+.form form{
+    float: left;
+    text-align: center;
+    min-width: -webkit-fill-available;
+}
+.textArea{
+    width:100%;
+}
+.textArea textarea{
+    width: 100%;
+}
+
+.borderCard{
+    border: 0.5px solid white;
+    margin: auto;
+    width: 100%;
+    font-size: larger;
+    padding: 10px;
+
+}
+@media only screen and (min-width:600px) and (max-device-width: 800px) { 
+
+    .borderCard{
+        border: 0.5px solid white;
+        margin: auto;
+        width: 80%;
+        font-size: larger;
+        padding: 10px;
+    
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+
+    .borderCard{
+        border: 0.5px solid white;
+        margin: auto;
+        width: 80%;
+        font-size: larger;
+        padding: 10px;
+    
+    }
+
+    .textArea textarea{
+        width: 85%;
+    }
+
+}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 2560px) {
+
+    .borderCard{
+        width: 700px !important;
+        border: 0.5px solid white;
+        margin: auto;
+        width: 80%;
+        font-size: larger;
+        padding: 10px;
+
+    }
+
+    .textArea textarea{
+        width: 55%;
+    }
+
+
+}

@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  float: left;
+  width: -webkit-fill-available;
+}
+.card{
+  background: none !important;
+}
