@@ -1,3 +1,4 @@
+<a href="https://wakatime.com/badge/github/DanielAndrei1/AmazingClothes"><img src="https://wakatime.com/badge/github/DanielAndrei1/AmazingClothes.svg" alt="wakatime"></a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
